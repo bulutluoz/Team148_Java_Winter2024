@@ -1,5 +1,6 @@
 package day02_scanner;
 
+
 import java.util.Scanner;
 
 public class C06_KullaniciDegerleriniYazdirma {
