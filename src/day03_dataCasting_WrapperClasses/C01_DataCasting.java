@@ -4,6 +4,17 @@ public class C01_DataCasting {
 
     public static void main(String[] args) {
 
+        /*
+
+            1- String ve boolean baska data turunden deger kabul etmez
+            2- char ozel olarak incelenecek
+               ama String,boolean,float ve double degerler kabul etmez
+            3- Sayisal data turlerine gelince
+               dar kapsamli degeri, genis kapsamli variable'a atamak istersek
+               Java bu islemi otomatik olarak yapar
+               bu isleme "AUTO WIDENING" (otomatik genisletme) denir
+         */
+
 
         boolean bl = true;
         char chr = 'a';
@@ -48,35 +59,35 @@ public class C01_DataCasting {
         // tamsayi degeri barindiran data turleri ile ozel durumlarda casting yapabilir
         // ama double, float, boolean veya String ile casting olmaz
 
-        byt = shrt; // 23
-        byt = sayiInt; // 30
-        byt = lng; // 40
-        byt = flt; // 3.5F
-        byt = dbl; // 4.5
+//        byt = shrt; // 23
+//        byt = sayiInt; // 30
+//        byt = lng; // 40
+//        byt = flt; // 3.5F
+//        byt = dbl; // 4.5
 
         shrt = byt;
-        shrt = sayiInt;
-        shrt = lng;
-        shrt = flt;
-        shrt = dbl;
+//        shrt = sayiInt;
+//        shrt = lng;
+//        shrt = flt;
+//        shrt = dbl;
 
         sayiInt = byt;
         sayiInt = shrt;
-        sayiInt = lng;
-        sayiInt = flt;
-        sayiInt = dbl;
+//        sayiInt = lng;
+//        sayiInt = flt;
+//        sayiInt = dbl;
 
         lng = byt;
         lng = shrt;
         lng = sayiInt;
-        lng = flt;
-        lng = dbl;
+//        lng = flt;
+//        lng = dbl;
 
         flt = byt;
         flt = shrt;
         flt = sayiInt;
         flt = lng;
-        flt = dbl;
+//        flt = dbl;
 
         dbl = byt;
         dbl = shrt;
