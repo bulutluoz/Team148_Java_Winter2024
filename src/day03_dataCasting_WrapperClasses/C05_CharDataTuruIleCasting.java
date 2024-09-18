@@ -48,5 +48,7 @@ public class C05_CharDataTuruIleCasting {
         System.out.println(  (char)(verilenHarf+2) ); // U
         System.out.println(  (char)(verilenHarf+3) ); // V
 
+
+
     }
 }
