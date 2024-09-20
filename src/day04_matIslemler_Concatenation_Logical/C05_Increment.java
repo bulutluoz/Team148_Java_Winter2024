@@ -42,7 +42,8 @@ public class C05_Increment {
 
 
         int d=128;
-        d+=10.35;
+        d+=10.35; //128
+
         System.out.println("d = " + d);
 
 
