@@ -21,10 +21,13 @@ public class C13_VucutKitleEndeksi {
 
         System.out.println("cm olarak boyunuzu giriniz...");
         double boy = scanner.nextDouble();
+        double vke = (kilo * 10000 / (boy * boy));
 
-        double vke = (kilo*10000 / (boy * boy)) ;
 
-        System.out.println("Vucut kitle endeksiniz : " + vke );
+        if (   !(kilo < 30 || boy < 50 ) ) {
+            System.out.println("Vucut kitle endeksiniz : " + vke);
+        }
+
 
         if (kilo < 30 || boy < 50 )
             System.out.println("Verilen degerler icin Vucut kitle endeksi hesaplanamaz...");
