@@ -32,6 +32,7 @@ public class P07_emailKontrol {
 
         //ÖDEV: soruyu aynı şartlarda if else statements ile çözün
 
+
     }
 
 }

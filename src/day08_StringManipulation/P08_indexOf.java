@@ -1,5 +1,7 @@
 package day08_StringManipulation;
 
+import java.util.Scanner;
+
 public class P08_indexOf {
     public static void main(String[] args) {
 
@@ -24,10 +26,8 @@ public class P08_indexOf {
         System.out.println(str.indexOf("murat"));
         //sonuc -1 yazarsa aranan şey metinde yoktur
 
-   /*
-        ÖDEV: Kullanıcan bir metin alıp metinde birden fazla a harfi varsa a harfinin ikincisinin
-        hangi indexte olduğun yazdırın. Bir tane varsa bir tane var yazdırın
-   */
+
+
 
     }
 }
