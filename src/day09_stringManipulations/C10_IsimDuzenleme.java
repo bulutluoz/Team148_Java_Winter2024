@@ -25,7 +25,7 @@ public class C10_IsimDuzenleme {
             //    isim ve soyismi ilk harf buyuk kalanlar kucuk seklinde yazdirin
 
             System.out.println(
-                    isim.substring(0,1).toUpperCase()+ // ilk harf buyuk harf
+                    isim.toUpperCase().charAt(0)+ // ilk harf buyuk harf
                     isim.substring(1).toLowerCase()+ // kalanlar kucuk harf
                     " "+
                     soyisim.substring(0,1).toUpperCase()+ // ilk harf buyuk harf
