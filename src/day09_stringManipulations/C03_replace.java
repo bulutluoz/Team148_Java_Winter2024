@@ -34,5 +34,7 @@ public class C03_replace {
 
         System.out.println(str.replace(eskiMetin, yeniMetin));
 
+
+
     }
 }
