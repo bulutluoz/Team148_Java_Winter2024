@@ -21,5 +21,20 @@ public class C07_ReplaceAll {
         System.out.println("Lutfen 16 hane olarak kredi karti numaranizi giriniz...");
         String kkNo = scanner.nextLine();
 
+        System.out.println(
+                "Girilen bilgiler: " +
+                isim.substring(0,1).toUpperCase()+ // ismin ilk harfi buyuk harf olarak
+                isim.substring(1).replaceAll("\\w","*") + // kalani *'a cevirdik
+                " "+
+                soyisim.substring(0,1).toUpperCase() + // soyismin ilk harfi buyuk harf olarak
+                soyisim.substring(1).replaceAll("\\w","*")+
+                ", "+
+                "**** **** **** "+ // kredi kartinin ilk 12 rakami
+                kkNo.substring(12)
+        );
+
+
+
+
     }
 }
