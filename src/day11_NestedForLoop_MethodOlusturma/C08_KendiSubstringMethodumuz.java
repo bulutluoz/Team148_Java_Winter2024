@@ -36,5 +36,31 @@ public class C08_KendiSubstringMethodumuz {
         System.out.println(str.substring(basIndex, bitIndex));
 
 
+        str = "Ali can";
+
+        System.out.println(str.replace("A", "a")); // ali can
+
+        str.substring(2); // calisir - ne goruruz - ne de sonradan kullanabiliriz
+        System.out.println(str.substring(4)); // goruruz - sonradan kullanamayiz
+        String sonuc = str.substring(5); // goremeyiz - sonradan kullanabiliriz
+
+        /*
+            Bize bir sonuc getiren method'lar da
+            o sonuc ile ilgili biz de bir islem yapmaliyiz
+            43.satirdaki method CALISIR, bize "i can" dondurur
+            ama biz yazdirmadigimiz veya kaydetmedigimiz icin "i Can" havaya gider
+
+            44.satirdaki method CALISIR ve bize "can" getirir
+            yazdirma islemi yapildigi icin konsolda "can" yazisini goruruz
+            ama dondurulen "can" yazisini sonraki satirlarda yeniden kod yazmadan kullanamayiz
+
+            45.satirdaki method CALISIR ve bize "an" getirir
+            yazdirma islemi yapilmadigi icin konsolda "an" yazisini GOREMEYIZ
+            amma bir variable'a kaydettigimiz icin
+            45.satirdan sonra ne zaman "an" degerine ihtiyacimiz olsa sonuc variable'ini kullanabiliriz
+         */
+
+
+
     }
 }
