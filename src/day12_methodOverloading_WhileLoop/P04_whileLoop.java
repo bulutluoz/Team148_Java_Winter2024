@@ -25,5 +25,5 @@ public class P04_whileLoop {
 
     }
     //ÖDEV:While loop kullanarak verilen bir String’i terse cevirip,
-    // bu halini bize donduren bir method olusturun.
+   // bu halini bize donduren bir method olusturun.
 }
