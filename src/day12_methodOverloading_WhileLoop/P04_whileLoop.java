@@ -2,7 +2,7 @@ package day12_methodOverloading_WhileLoop;
 
 import java.util.Scanner;
 
-public class P04_methodOverloading {
+public class P04_whileLoop {
     public static void main(String[] args) {
    /*
 
@@ -24,4 +24,6 @@ public class P04_methodOverloading {
         System.out.println("Rakamlar Toplamı = " + rakamlarToplami);
 
     }
+    //ÖDEV:While loop kullanarak verilen bir String’i terse cevirip,
+    // bu halini bize donduren bir method olusturun.
 }
