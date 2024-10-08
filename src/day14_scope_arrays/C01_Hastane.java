@@ -8,7 +8,7 @@ public class C01_Hastane {
 
     String perIsmi = "Isim atanmadi";
     String perAdres = "Adres atanmadi";
-    String perTel ="Telefon atanmadi";
+    String perTel = "Telefon atanmadi";
 
 
     public static void main(String[] args) {
