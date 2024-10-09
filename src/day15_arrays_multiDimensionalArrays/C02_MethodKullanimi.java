@@ -9,10 +9,15 @@ public class C02_MethodKullanimi {
 
     public static void main(String[] args) {
 
+        // kullanicidan degerler alarak bir String array olusturun
 
+        String[] isimler = C03_KullaniciyaArrayOlusturtma.stringArrayOlustur();
 
+        System.out.println(Arrays.toString(isimler));
 
+        // bu String array'deki en kisa ve en uzun metinleri yazdirin
 
+        C04_EnUzunEnKisaKelime.enKisaVeEnUzunuYazdir(isimler);
 
 
 

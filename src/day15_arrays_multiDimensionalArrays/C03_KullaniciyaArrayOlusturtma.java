@@ -36,7 +36,8 @@ public class C03_KullaniciyaArrayOlusturtma {
     // array’i olusturan ve bize donduren bir method olusturun.
 
     public static int[] arrayOlustur(){
-
+    // method signature = methodIsmi + parametrelerin data turu
+    //                  = arrayOlustur + ""
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("Array'e konulacak eleman sayisini giriniz...");
@@ -58,7 +59,7 @@ public class C03_KullaniciyaArrayOlusturtma {
     }
 
 
-    public static String[] arrayOlustur(){
+    public static String[] stringArrayOlustur(){
 
         Scanner scanner = new Scanner(System.in);
 
@@ -66,10 +67,11 @@ public class C03_KullaniciyaArrayOlusturtma {
         int arrLength = scanner.nextInt();
 
         String[] metinler = new String[arrLength];
+        scanner.nextLine();
 
         for (int i = 0; i <arrLength ; i++) {
 
-            System.out.println("Array'e konulacak bir tamsayi giriniz");
+            System.out.println("Array'e konulacak bir metin giriniz");
 
             metinler[i] = scanner.nextLine();
 
