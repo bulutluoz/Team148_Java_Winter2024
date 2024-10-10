@@ -1,4 +1,4 @@
-package day15_arrays_multiDimensionalArrays;
+package day15_arrays;
 
 public class C01_ElemanArama {
 
