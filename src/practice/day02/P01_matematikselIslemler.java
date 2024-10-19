@@ -1,6 +1,6 @@
-package practice.day01;
+package practice.day02;
 
-public class C01_matematikselIslemler {
+public class P01_matematikselIslemler {
     public static void main(String[] args) {
 
         int a=14;

@@ -1,6 +1,6 @@
-package practice.day01;
+package practice.day02;
 
-public class C03_Concatenation {
+public class P03_Concatenation {
     public static void main(String[] args) {
 
         String str1="Java";

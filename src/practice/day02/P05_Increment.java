@@ -1,6 +1,6 @@
-package practice.day01;
+package practice.day02;
 
-public class C05_Increment {
+public class P05_Increment {
 
     public static void main(String[] args) {
         int sayi=20;

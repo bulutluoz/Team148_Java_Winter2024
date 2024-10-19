@@ -1,4 +1,4 @@
-package practice.day03;
+package practice.day04;
 
 public class P04_StringManipulation {
     public static void main(String[] args) {

@@ -1,8 +1,8 @@
-package practice.day01;
+package practice.day02;
 
 import java.util.Scanner;
 
-public class C02_matematikselIslemler {
+public class P02_matematikselIslemler {
 
     public static void main(String[] args) {
         // Kullanicidan 4 basamakli pozitif bir tamsayi alip rakamlar toplamini bulalim

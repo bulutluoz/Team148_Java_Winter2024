@@ -1,6 +1,6 @@
-package practice.day01;
+package practice.day02;
 
-public class C04_postIncrementPreIncrement {
+public class P04_postIncrementPreIncrement {
     public static void main(String[] args) {
         int a=30;
         int b=50;

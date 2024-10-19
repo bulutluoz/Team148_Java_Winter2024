@@ -1,8 +1,8 @@
-package practice.day01;
+package practice.day02;
 
 import java.util.Scanner;
 
-public class C06_operators {
+public class P06_operators {
     public static void main(String[] args) {
 
 
