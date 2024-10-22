@@ -1,4 +1,4 @@
-package day22_immutableClasses;
+package day22_immutableClasses_dateTime;
 
 public class C02_StringAtamaYapilirsa {
 
