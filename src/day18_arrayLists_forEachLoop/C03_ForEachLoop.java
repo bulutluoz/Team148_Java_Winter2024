@@ -18,11 +18,11 @@ public class C03_ForEachLoop {
             3- do-while loop
                loop body'nin en az 1 kere calismasi gereken durumlarda
 
-            4- Cok ozel bir kullanim icin olusturulmustur
-               ama o kullanimda cok ideal'dir
-
-               For-each loop birden fazla eleman barindiran yapilardaki
+            4- For-each loop birden fazla eleman barindiran yapilardaki
                TUM ELEMENTLERI siralama olmaksizin (index kullanmadan) bize getirir
+
+               Spesifik bir kullanim icin olusturulmustur
+               ama o kullanimda cok ideal'dir
          */
 
 
