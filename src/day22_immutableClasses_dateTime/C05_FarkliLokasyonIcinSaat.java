@@ -8,6 +8,20 @@ public class C05_FarkliLokasyonIcinSaat {
 
     public static void main(String[] args) {
 
+        /*
+            LocalTime class'i ile
+
+            - herhangi bir andaki local zamani kaydedebiliriz
+            - herhangi bir anda her hangi bir saat dilimideki(ZoneId) zamani kaydedebiliriz
+            - Verilen iki localtime arasindaki zaman dilimini bulabiliriz
+            - localTime'dan
+                - get() zamanin istenen bolumunu alabilirim
+                - with() zamanin belirli bir bolumunu istedigim degerle degistirebilirim
+                - plus() zamani istedigimiz kadar ileri alabiliriz
+                - minus() zamani istedigimiz kadar geri alabiliriz
+            - farkli zamanlari isAfter veya isBefore ile karsilastirabiliriz
+         */
+
         // su anda Japonya'daki saati yazdirin
 
         LocalTime timeJaponya = LocalTime.now(ZoneId.of("Japan"));
