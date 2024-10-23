@@ -19,8 +19,6 @@ public class C05_Varargs {
 
     }
 
-
-
     public static void topla(int... a ){
         // int... icine istedigimiz kadar int koyabilecegimiz bir array olan varags'i ifade eder
         // var args ==> variety of arguments ( argument sayilarinin farkli olabilmesi)
@@ -37,13 +35,11 @@ public class C05_Varargs {
         System.out.println("tum tamsayilarin toplami : " + (toplam));
     }
 
-
-
     public static void topla(int a , int b){
         System.out.println("iki tamsayinin toplami : " + (a+b));
     }
 
-    public static void topla(int a , int b,int c){
+    public static void topla(int a , int b, int c){
         System.out.println("uc tamsayinin toplami : " + (a+b+c));
     }
 }
