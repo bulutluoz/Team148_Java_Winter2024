@@ -87,27 +87,33 @@ public class C03_LocalDateTime {
         System.out.println(tarih.format(format5)); // 5:4
 
         DateTimeFormatter format6 = DateTimeFormatter.ofPattern("HH:mm");
-        System.out.println(ldt.format(format5)); // 10:44
-        System.out.println(tarih.format(format5)); // 05:04
+        System.out.println(ldt.format(format6)); // 10:44
+        System.out.println(tarih.format(format6)); // 05:04
 
 
 
         // 10:19 am         12 saatlik dilime gore
+        DateTimeFormatter format7 = DateTimeFormatter.ofPattern("hh:mm a");
+        System.out.println(ldt.format(format7)); // 11:03 AM
+        System.out.println(tarih.format(format7)); // 05:04 AM
 
 
-        // 08:23:24         saat, dakika, saniye hepsi 2 basamakli olsun
-
+        // 08:23:24         saat, dakika, saniye hepsi 2 basamakli ve 24 saate gore olsun
+        DateTimeFormatter format8 = DateTimeFormatter.ofPattern("HH:mm:ss");
+        System.out.println(ldt.format(format8)); // 11:05:05
+        System.out.println(tarih.format(format8)); // 05:04:00
 
         // 8-3-24         saat, dakika, saniye hepsi tek basamakli olabilsin
-
+        DateTimeFormatter format9 = DateTimeFormatter.ofPattern("H:m:s");
+        System.out.println(ldt.format(format9)); // 11:6:7
+        System.out.println(tarih.format(format9)); // 5:4:0
 
 
         // Wed Oct 23 3:20 PM
 
-
-
-
-
+        DateTimeFormatter format10 = DateTimeFormatter.ofPattern("EEE MMM yy h:mm a");
+        System.out.println(ldt.format(format10)); // Wed Oct 24 11:08 AM
+        System.out.println(tarih.format(format10)); // Sat Mar 09 5:04 AM
 
 
     }
