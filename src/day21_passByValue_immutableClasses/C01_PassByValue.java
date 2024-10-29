@@ -3,7 +3,7 @@ package day21_passByValue_immutableClasses;
 public class C01_PassByValue {
     public static void main(String[] args) {
 
-        /*
+                /*
             bir variable'i argument olarak kullanip
             baska bir method'a gonderdigimizde
             Java variable'in kendisini degil VALUE(deger)'sunu gonderir
@@ -37,7 +37,6 @@ public class C01_PassByValue {
             parametre olarak yollayabiliriz
          */
     }
-
     public static void buyukHarfeCevir(String cumle){
 
         cumle = cumle.toUpperCase();

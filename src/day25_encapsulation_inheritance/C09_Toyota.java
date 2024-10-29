@@ -13,7 +13,7 @@ public class C09_Toyota extends C08_Araba {
     //    ornegin bu class'da marka, kasa veya motor variable'lari olmasa da
     //    parent class'daki var olan variable'lari kullanabiliriz
 
-    C09_Toyota(){
+    protected C09_Toyota(){
         // System.out.println(marka);
         // System.out.println(kasa);
         // motor = "1.4 benzinli";
@@ -22,15 +22,15 @@ public class C09_Toyota extends C08_Araba {
     // 2- Toyota class'i isterse parent class'i olan Araba class'indaki
     //    bazi variable'lari kendisine uyarlayabilir
 
-    String marka = "Toyota";
-    String motor = "Cevreye duyarli motor";
+    protected String marka = "Toyota";
+    protected String motor = "Cevreye duyarli motor";
 
     // 3- Toyota class'i isterse parent class'da olmayan
     //    yeni ozellikler ekleyebilir
 
-    String lastik = "Pirelli";
-    String guvenlik = "DGS1001";
-    String fren = "ABS";
+    protected String lastik = "Pirelli";
+    protected String guvenlik = "DGS1001";
+    protected String fren = "ABS";
 
     // bu durumda toyota class'indan olusturulacak obje olsa
     // Araba class'indan 3 adet ( model, sanzuman, kasa)
