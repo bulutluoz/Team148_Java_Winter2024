@@ -3,7 +3,7 @@ package day26_inheritance;
 public class C07_P extends C06_GP{
 
     C07_P(){
-
+        // super();
         System.out.println("P parametresiz constructor calisti");
     }
 
