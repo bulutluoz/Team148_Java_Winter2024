@@ -43,7 +43,28 @@ public class C05_AvciKuslar extends C04_Kuslar{
             DATA TURU belirleyicidir
          */
 
+        // Hayvanlar class'indan bir obje olusturun
+
+        C03_Hayvanlar hayvan1 = new C03_Hayvanlar();
+        System.out.println(hayvan1.omur); // H yasar ve olur
+        System.out.println(hayvan1.solunum); //  H nefes alirlar
+        System.out.println(hayvan1.cogalma); // H cogalirlar
+        //System.out.println(hayvan1.kanat); // Hayvanlar class'inda yok CTE
+        System.out.println(hayvan1.hareket); // H hareket ederler
+        System.out.println(hayvan1.beslenme); // H beslenirler
+        //System.out.println(hayvan1.gaga); // Hayvanlar class'inda yok CTE
+        //System.out.println(hayvan1.pence); // Hayvanlar class'inda yok CTE
+
         // Kuslar class'indan bir obje olusturun
+        C03_Hayvanlar kusHayvani = new C04_Kuslar();
+        System.out.println(kusHayvani.omur); // H yasar ve olur
+        System.out.println(kusHayvani.solunum); //  H nefes alirlar
+        System.out.println(kusHayvani.cogalma); // H cogalirlar
+        //System.out.println(kusHayvani.kanat); // Hayvanlar class'inda yok CTE
+        System.out.println(kusHayvani.hareket); // H hareket ederler
+        System.out.println(kusHayvani.beslenme); // H beslenirler
+        //System.out.println(kusHayvani.gaga); // Hayvanlar class'inda yok CTE
+        //System.out.println(kusHayvani.pence); // Hayvanlar class'inda yok CTE
 
         C04_Kuslar kus = new C04_Kuslar();
         System.out.println(kus.omur); // H yasar ve olur
@@ -53,28 +74,7 @@ public class C05_AvciKuslar extends C04_Kuslar{
         System.out.println(kus.hareket); // H hareket ederler
         System.out.println(kus.beslenme); // H beslenirler
         System.out.println(kus.gaga); // K gagalari vardir
-        System.out.println(kus.pence); // Kuslar ve Hayvanlar class'inda yokCTE
-
-
-
-
-
-
-        C03_Hayvanlar kusHayvani = new C04_Kuslar();
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        //System.out.println(kus.pence); // Kuslar ve Hayvanlar class'inda yokCTE
 
 
         C03_Hayvanlar hayvanKartal = new C05_AvciKuslar();
