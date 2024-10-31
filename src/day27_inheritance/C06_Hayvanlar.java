@@ -10,18 +10,12 @@ public class C06_Hayvanlar {
         System.out.println("nefes alirlar");
     }
 
-    public void beslenme(){
-
-        System.out.println("beslenirler");
+    public void beslenme(){System.out.println("beslenirler");
     }
 
-    public void cogalma(){
-
-        System.out.println("cogalirlar");
+    public void cogalma(){  System.out.println("cogalirlar");
     }
 
-    public void omur(){
-
-        System.out.println("yasar ve olurler");
+    public void omur(){ System.out.println("yasar ve olurler");
     }
 }
