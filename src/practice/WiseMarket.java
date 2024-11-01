@@ -225,7 +225,7 @@ public static void main(String[] args)  {
         }else {
             System.out.println("Para üstü: "+(odenen-toplam));
         }
-        System.out.println(" Bizi terci ettiğiniz için teşekkür ederiz");
+        System.out.println("Bizi tercih ettiğiniz için teşekkür ederiz");
         LocalDateTime time=LocalDateTime.now();
         System.out.println(time);
         cikis();
@@ -234,7 +234,7 @@ public static void main(String[] args)  {
     }
 
     public static void cikis() {
-        System.out.print("  Çıkış Yapılıyor  ");
+        System.out.print("\n\n\nÇıkış Yapılıyor  ");
 
         scan.close(); // Giriş yapmak için açılan tarayıcı kapatılır
         System.exit(0); // çalışan Kodu durdurur. Bu satırdan sonrası çalışmaz
