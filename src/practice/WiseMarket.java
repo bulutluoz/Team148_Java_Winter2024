@@ -4,6 +4,10 @@ import java.util.Scanner;
 
 public class WiseMarket {
     static Scanner scan=new Scanner(System.in);
+    static int urunKodu;
+    static String urunAdi;
+    static int urunfiyat;
+    static int urunAdedi;
 
 
 /*
@@ -49,7 +53,53 @@ public static void main(String[] args) throws InterruptedException {
 
     public static void sarkuteri() throws InterruptedException {
         System.out.println("====== Şarküteri Reyonuna Hoşgeldiniz ======");
-        girisEkrani();
+        System.out.println("Lütfen Satın almak istediğiniz ürün kodunu giriniz" );
+        System.out.println("------          Ürün Listesi          ------");
+        System.out.println("101-Peynir  200₺\n102-Kaymak  150₺\n103-Sucuk  300₺\n104-Pastırma  250₺\n105-Kavurma  275₺");
+        urunKodu= scan.nextInt();
+        if (urunKodu>=101 && urunKodu<=105){
+            System.out.println(" Kaç Paket Alacaksınız?");
+            urunAdedi= scan.nextInt();
+            switch (urunKodu){
+                case 101:urunAdi="Peynir";
+                    urunfiyat=200;
+                    System.out.println(urunAdedi+"paket "+urunAdi+" fiyatı: "+(urunfiyat*urunAdedi)); break;
+                case 102:
+                    urunAdi="Kaymak";
+                    urunfiyat=150;
+                    System.out.println(urunAdedi+"paket "+urunAdi+" fiyatı: "+(urunfiyat*urunAdedi));break;
+                case 103:
+                    urunAdi="Sucuk";
+                    urunfiyat=300;
+                    System.out.println(urunAdedi+"paket "+urunAdi+" fiyatı: "+(urunfiyat*urunAdedi));break;
+                case 104:
+                    urunAdi="Pastırma";
+                    urunfiyat=250;
+                    System.out.println(urunAdedi+"paket "+urunAdi+" fiyatı: "+(urunfiyat*urunAdedi));break;
+                case 105:
+                    urunAdi="Kavurma";
+                    urunfiyat=275;
+                    System.out.println(urunAdedi+"paket "+urunAdi+" fiyatı: "+(urunfiyat*urunAdedi));break;
+                default:
+                    System.out.println("Geçersiz Giriş. Yeniden Deneyiniz");
+                    sarkuteri();
+
+
+
+            }
+        }
+
+
+
+
+
+
+
+
+
+
+
+
     }
 
     public static void manav() throws InterruptedException {
@@ -68,13 +118,13 @@ public static void main(String[] args) throws InterruptedException {
     }
 
     public static void cikis() throws InterruptedException {
-    System.out.print("====== Çıkış Yapılıyor  ======");
-    Thread.sleep(1500);
-    System.out.println(".");
-    Thread.sleep(1500);
-    System.out.println(".");
-    Thread.sleep(1500);
-    System.out.println(".");
+    System.out.print("  Çıkış Yapılıyor  ");
+    Thread.sleep(500);
+    System.out.print(".");
+    Thread.sleep(500);
+    System.out.print(".");
+    Thread.sleep(500);
+    System.out.print(".");
     scan.close();
     System.exit(0);
     }
