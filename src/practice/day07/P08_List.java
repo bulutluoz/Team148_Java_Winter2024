@@ -14,7 +14,7 @@ public class P08_List {
         System.out.print("Not girmek istiyor musunuz: ( E / H ): ");
         char devam=scan.next().toUpperCase().charAt(0);
         double toplam=0;
-        double ortalama=toplam/not.size();
+
         while(devam=='E'){
             System.out.print("Notu Giriniz: ");
             not.add(scan.nextDouble()); //her not girdiğinde list'e yeni eleman olarak notu ekleyecek
@@ -26,7 +26,7 @@ public class P08_List {
             toplam+=not.get(i);
         }
 
-
+        double ortalama=toplam/not.size();
         System.out.println("Girilen Notların ortalaması: "+ortalama);
 
         List<Double> ortGecen=new ArrayList<>();
