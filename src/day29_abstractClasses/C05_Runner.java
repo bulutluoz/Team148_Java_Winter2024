@@ -27,7 +27,10 @@ public class C05_Runner {
             obje ile asagidaki gibi abstract method'lar cagrilabilir
             AMMMAAA abstract method'larin body'si olmadigindan calisamazlar
          */
+
         // C03_KuralciParent kp1 = new C03_KuralciParent();
+        // 'C03_KuralciParent' is abstract; cannot be instantiated
+        // C03 Abstract bir class'dir ve bu class'dan obje olusturulamaz
         // kp1.method1();
 
 
@@ -40,4 +43,8 @@ public class C05_Runner {
         kp1.method4(); // Parent method4
 
     }
+
+    // public abstract void abstractMethod();
+    // Abstract method in non-abstract class
+    // concrete bir class'da abstract method olmaz
 }
