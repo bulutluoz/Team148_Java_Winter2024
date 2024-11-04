@@ -1,5 +1,8 @@
 package day29_abstractClasses;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class C08_Corolla extends  C07_Toyota{
 
     public void sase() {
@@ -23,8 +26,6 @@ public class C08_Corolla extends  C07_Toyota{
     }
 
     // Toyota marka Corolla model arac var, yani bu class concrete olmali
-
-
 
 
 }
