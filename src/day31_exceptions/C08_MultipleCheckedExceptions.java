@@ -2,10 +2,32 @@ package day31_exceptions;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
+import java.io.IOException;
 
 public class C08_MultipleCheckedExceptions {
 
     public static void main(String[] args) {
+
+        /*
+            FileInputStream fileInputStream olusturdugumuzda
+            Java Ya dosyayi bulamazsam dedi,
+            biz de try catch ile sarmalayip
+            FileNotFoundException'i kontrol altina aldik
+
+            Ancak fileInputStream.read() yazdigimizda
+            bu defa da IOException riski barindirdigi icin altini kirmizi cizdi
+
+            IOException, FileNotFoundException'in parent'i oldugundan
+            islem yaparken bu iliskiyi dikkate almaliyiz
+            1- eger ikisini de ayri catch cumleleri ile yazacaksak
+               uste child exception yazilmalidir
+
+            2- eger ikisini ayri ayri yazmak istemezsek
+               sadece parent olan IO exception'i yazmamiz yeterli olacaktir
+               cunku IOException ikisini de kapsar
+
+         */
+
 
         // notlar dosyasindaki yazilari konsolda yazdirin
 
@@ -14,10 +36,6 @@ public class C08_MultipleCheckedExceptions {
 
         try {
             fileInputStream = new FileInputStream(dosyaYolu);
-
-        } catch (FileNotFoundException e) {
-            System.out.println("Verilen dosya yolu hatali...");
-
             // dosyadaki yazilari konsolda yazdirin
 
             int k=0;
@@ -25,6 +43,12 @@ public class C08_MultipleCheckedExceptions {
                 // Unhandled exception: java.io.IOException
                 System.out.print((char) k);
             }
+
+        } catch (FileNotFoundException e) {
+            System.out.println("Verilen dosya yolu hatali...");
+
+        } catch (IOException e) { // IO ==> Input Output
+            System.out.println("Dosyadaki degerler okunamiyor");
         }
     }
 }
