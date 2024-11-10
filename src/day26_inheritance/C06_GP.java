@@ -15,3 +15,6 @@ public class C06_GP {
         System.out.println("GP int parametreli constructor calisti");
     }
 }
+
+
+
