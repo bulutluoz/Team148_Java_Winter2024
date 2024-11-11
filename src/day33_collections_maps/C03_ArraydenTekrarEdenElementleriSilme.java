@@ -38,9 +38,10 @@ public class C03_ArraydenTekrarEdenElementleriSilme {
         }
 
 
-
-
         System.out.println("Array'in son hali : " + Arrays.toString(arr));
+
+
+
 
 
     }
