@@ -44,6 +44,15 @@ public class Runner {
         //106 Sevgi Can
 
 
+        MapDepo.numaraIleSoyisimUpdate(102,"Mutlu");
+        MapDepo.numaraIleSoyisimUpdate(103,"Sen");
+
+
+
+        MapDepo.bolumGuncelle("MF","say");
+
+
+        System.out.println(MapDepo.ogrenciMap);
 
 
     }

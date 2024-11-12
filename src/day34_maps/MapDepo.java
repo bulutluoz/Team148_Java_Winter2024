@@ -1,9 +1,6 @@
 package day34_maps;
 
-import java.util.Collection;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Set;
+import java.util.*;
 
 public class MapDepo {
 
@@ -207,6 +204,95 @@ public class MapDepo {
     }
 
     public static void kullaniciyaYeniOgrenciOlusturtma(){
+
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Lutfen ogrenci no giriniz");
+        int key = scanner.nextInt();
+
+        String value = "";
+        scanner.nextLine();
+
+        System.out.println("ogrenci ismi ?");
+        value += scanner.nextLine();
+        value+= "-";
+
+        System.out.println("ogrenci soyismi ?");
+        value += scanner.nextLine();
+        value+= "-";
+
+        System.out.println("ogrenci sinif ?");
+        value += scanner.nextLine();
+        value+= "-";
+
+        System.out.println("ogrenci sube ?");
+        value += scanner.nextLine().toUpperCase();
+        value+= "-";
+
+        System.out.println("ogrenci bolum ?");
+        value += scanner.nextLine();
+
+
+        ogrenciMap.put(key,value);
+
+    }
+
+    public static void numaraIleSoyisimUpdate(int ogrenciNo, String yeniSoyisim){
+
+        // once ogrencinin eski value'sunu alalim
+
+        String eskiValue = ogrenciMap.get(ogrenciNo); // "Veli-Cem-10-K-TM"
+
+        // Value birlesik bilgilerden olusuyor,
+        // soyisme ulasmak ve update etmek icin eski value'yu split etmemiz gerekir
+
+        String[] eskiValueArr = eskiValue.split("-");
+        // [Veli, Cem, 10, K, TM]
+
+        // artik yeni soyismi array'e atayabiliriz
+
+        eskiValueArr[1] = yeniSoyisim;
+        // [Veli, Kaya, 10, K, TM]
+
+
+        String yeniValue = String.join("-",eskiValueArr); // "Veli-Kaya-10-K-TM"
+
+        ogrenciMap.put(ogrenciNo,yeniValue);
+    }
+
+    public static void bolumGuncelle( String eskiBolum, String yeniBolum){
+        // Tum ogrencilerin key ve value'larini gozden gecirmemiz gerekiyor
+
+        // 1- key'leri bir Set olarak kaydedelim
+        Set<Integer> ogrenciKeySeti = ogrenciMap.keySet();
+
+
+        // 2- tum key'leri elden gecirmek icin for-each loop lazim
+
+        for(Integer eachKey : ogrenciKeySeti){
+
+            // biz key'leri elden geciriyoruz ama bolum bilgisi value'de
+            // eachKey'i kullanarak eskiValue'yu kaydedelim
+
+            String eskiValue = ogrenciMap.get(eachKey); //
+
+            String[] eskiValueArr = eskiValue.split("-");  // [Veli, Cem, 10, K, TM]
+
+            if (eskiValueArr[4].equalsIgnoreCase(eskiBolum)){
+
+                eskiValueArr[4] = yeniBolum; // [Veli, Cem, 10, K, Say]
+
+                // tum ogrencileri yeniden birlestirip,
+                // map'i her ogrenci icin update etmesini istemezsek
+                // guncellemeyi if icinde yapmaliyiz
+                String yeniValue = String.join("-",eskiValueArr);
+                ogrenciMap.put(eachKey,yeniValue);
+
+            }
+
+
+
+        }
 
     }
 
