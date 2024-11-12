@@ -1,5 +1,7 @@
 package day34_maps;
 
+import java.util.Map;
+
 public class Runner {
 
     public static void main(String[] args) {
@@ -22,6 +24,24 @@ public class Runner {
         //11/M sinifi ogrenci listesi
         //Sevgi Cem
         //Esra Han
+
+        MapDepo.soyisimdenListeYazdir("can");
+        //Soyismi can olan ogrenci listesi
+        //Ali 11 H
+        //Ayse 10 H
+        //Sevgi 10 K
+
+        MapDepo.bolumListesiYazdir("MF");
+        //MF Bolumundeki ogrenci listesi
+        //101 Ali Can H
+        //104 Ayse Can H
+        //106 Sevgi Can K
+
+        MapDepo.numaraAraligindakiOgrenciListesi(104,106);
+        //104 ile 106 numaralari arasindaki ogrenci listesi
+        //104 Ayse Can
+        //105 Sevgi Cem
+        //106 Sevgi Can
 
 
 

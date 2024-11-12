@@ -3,6 +3,7 @@ package day34_maps;
 import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Set;
 
 public class MapDepo {
 
@@ -89,4 +90,120 @@ public class MapDepo {
 
         }
     }
+
+    public static void soyisimdenListeYazdir(String istenenSoyisim){
+        // 1- ismi gorebilmek icin value'lere ihtiyacimiz var
+
+        Collection<String > valueCollection = ogrenciMap.values();
+
+        System.out.println(valueCollection);
+
+        System.out.println("Soyismi " + istenenSoyisim + " olan ogrenci listesi");
+
+        // 2- her bir value'yu elden gecirip bilgileri kontrol etmek icin for each loop kullanalim
+        for (String eachValue : valueCollection){
+            // ornegin each bize "Ali-Can-11-H-MF" getirdi
+
+            // 3- value icindeki isim bilgisine ulasmak icin split edelim
+
+            String[] eachValueArr = eachValue.split("-");
+            //  [Ali, Can, 11, H, MF]
+
+            // 4- ARTIK istedigimiz bilgiye ulasabiliriz
+            //    bizden istenen gorevi yapalim
+
+            // Verilen soyisme sahip ogrencilerin
+            // Isim, sinif ve subelerini liste olarak yazdirin
+            if (eachValueArr[1].equalsIgnoreCase(istenenSoyisim)){
+                System.out.println(
+                        eachValueArr[0] + " " +
+                        eachValueArr[2] + " " +
+                        eachValueArr[3]
+                );
+            }
+
+
+
+        }
+    }
+
+    public static void bolumListesiYazdir(String istenenBolum){
+
+        System.out.println(istenenBolum + " Bolumundeki ogrenci listesi");
+        // numara da istendigi icin sadece value yetmez, key'leri kullanmamiz gerekir
+        // 1- Tum key'leri kaydedelim
+        Set<Integer> ogrenciKeySeti    = ogrenciMap.keySet();
+
+        // 2- Herbir key'i ele almak icin for each loop yapalim
+
+        for (Integer eachKey : ogrenciKeySeti){
+            // ornek eachKey : 101
+
+            // foreach loop her bir key'i bize getirecek
+            // ama aradigimiz bilgiler key'de degil value'de
+
+            String eachValue = ogrenciMap.get(eachKey); // "Ali-Can-11-H-MF"
+
+            // 3- istenen bilgilere ulasmak icin eachValue'yu split edelim
+
+            String[] eachValueArr = eachValue.split("-");
+            //    [Ali, Can, 11, H, MF]
+
+            // 4- artik istenen bilgilere ulasabiliyoruz
+            //    verilen gorevi yapalim
+
+            // verilen bolumdeki tum ogrencilerin
+            // Numara, isim,soyisim ve subelerini yazdirin
+
+            if (eachValueArr[4].equalsIgnoreCase(istenenBolum)){
+
+                System.out.println(
+                        eachKey + " "+
+                                eachValueArr[0] + " "+
+                                eachValueArr[1] + " "+
+                                eachValueArr[3]
+                );
+            }
+
+
+
+        }
+
+    }
+
+    public static void numaraAraligindakiOgrenciListesi(int basNo, int bitNo) {
+
+        System.out.println(basNo + " ile " + bitNo + " numaralari arasindaki ogrenci listesi");
+        Set<Integer> ogrenciKeySeti = ogrenciMap.keySet();
+
+        // butun key'leri elden gecirmek icin for-each loop
+
+        for (Integer eachKey : ogrenciKeySeti) {
+
+            // bu defa kontrol value'de degil key'de
+
+            if (eachKey >= basNo && eachKey <= bitNo) {
+
+                // isim ve soyisimlere ulasabilmek icin value'ye ihtiyac
+                String eachValue = ogrenciMap.get(eachKey);
+
+                // value'deki bilgilere ulasmak icin split yapmaliyiz
+                String[] eachValueArr = eachValue.split("-");
+
+                // artik istedigimiz bilgilere ulasabiliriz
+
+                System.out.println(
+                        // No,isim ve soyismlerini yazdirin
+                        eachKey + " " +
+                                eachValueArr[0] + " " +
+                                eachValueArr[1]
+
+                );
+
+
+            }
+
+        }
+    }
+
 }
