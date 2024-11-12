@@ -206,4 +206,8 @@ public class MapDepo {
         }
     }
 
+    public static void kullaniciyaYeniOgrenciOlusturtma(){
+
+    }
+
 }
