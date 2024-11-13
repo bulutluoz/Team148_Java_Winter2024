@@ -46,6 +46,11 @@ public class C04_NestedMapKullanma extends NestedMapDepo{
         // 104 numarali ogrencinin sinifi 11 veya daha kucukse
         // sinifini 1 artirin
 
+        int eskiSinif = Integer.parseInt(ogrenciMap.get(104).get("sinif"));
+
+        int yeniSinif = eskiSinif<=11 ? ++eskiSinif : eskiSinif ;
+
+        ogrenciMap.get(104).put("sinif" ,yeniSinif+"");
 
 
         System.out.println(ogrenciMap);
