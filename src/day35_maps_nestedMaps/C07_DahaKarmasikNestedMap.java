@@ -62,6 +62,13 @@ public class C07_DahaKarmasikNestedMap {
 
         }
 
+
+        // additionalneeds "breakfast" degilse 20 $ daha indirim yapin
+
+        if ( !rezervasyonMap.get("additionalneeds").equals("breakfast") ){
+            fiyat = fiyat - 20;
+            rezervasyonMap.put("totalprice",fiyat);
+        }
         System.out.println(rezervasyonMap);
                 /*
 
@@ -72,16 +79,21 @@ public class C07_DahaKarmasikNestedMap {
                                 checkin=2024-07-21,
                                 checkout=2024-08-10
                                 },
-                totalprice=405,
+                totalprice=385,
                 depositpaid=false,
                 lastname=Bulut
              }
          */
 
+        // checkin tarihini yazdirin
 
-        // additionalneeds "breakfast" degilse 20 $ daha indirim yapin
+        System.out.println(rezervasyonMap.get("checkin")); // null
+        // rezervasyon map'inin icinde direkt checkin yok
+        // checkin "bookingdates" key'ine ait value olan map'in icinde
+        System.out.println(((Map<String, String>) rezervasyonMap.get("bookingdates")).get("checkin"));
+        // 2024-07-21
 
-
+        System.out.println(((Map<String, String>) rezervasyonMap.get("bookingdates")).get("checkout"));
 
 
     }
