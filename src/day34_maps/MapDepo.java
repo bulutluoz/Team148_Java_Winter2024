@@ -296,4 +296,50 @@ public class MapDepo {
 
     }
 
+    public static void yilSonuSinifArtir(){
+
+        // update varsa mutlaka key olmali
+
+        // 1- tum key'leri kaydedelim
+        Set<Integer> ogrenciKeySeti = ogrenciMap.keySet();
+
+        // 2- tum key'leri gozden gecirmek icin for-each loop
+
+        for (Integer eachKey: ogrenciKeySeti){
+
+            // 3- sinif update etmek icin value'yu kaydedelim
+            String eachValue = ogrenciMap.get(eachKey); // "Sevgi-Cem-11-M-TM"
+
+            // 4- bilgilere ulasmak ve update etmek icin split edelim
+            String[] eachValueArr = eachValue.split("-"); // [Sevgi, Cem, 11, M, TM]
+
+            // 5- array'de istenen update'i yapalim
+
+            switch (eachValueArr[2]){
+                case "9" :
+                    eachValueArr[2]="10";
+                    break;
+                case "10" :
+                    eachValueArr[2]="11";
+                    break;
+                case "11" :
+                    eachValueArr[2]="12";
+                    break;
+                case "12" :
+                    eachValueArr[2]="Mezun";
+            } // [Sevgi, Cem, 12, M, TM]
+
+            // 6- Array'de yapilan degisikligi, map'e kaydetmek icin
+            //    yeniValue'yu olusturalim
+
+            String yeniValue = String.join("-",eachValueArr);
+
+            // 7- guncel value var, key==> eachKey
+
+            ogrenciMap.put(eachKey,yeniValue);
+
+        }
+
+    }
+
 }
