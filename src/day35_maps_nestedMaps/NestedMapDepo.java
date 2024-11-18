@@ -5,7 +5,8 @@ import java.util.Map;
 
 public class NestedMapDepo {
 
-    protected static Map<Integer , Map<String,String>> ogrenciMap = new HashMap<>();
+
+    public static Map<Integer , Map<String,String>> ogrenciMap = new HashMap<>();
 
     static {
         ogrenciyiMapeEkle(101,"Ali","Cem","11","K","TM");
@@ -16,7 +17,7 @@ public class NestedMapDepo {
         ogrenciyiMapeEkle(106,"Dilan","Kaya","9","M","Soz");
     }
 
-    protected static void ogrenciyiMapeEkle(int numara ,String isim, String soyisim, String sinif, String sube, String bolum) {
+    public static void ogrenciyiMapeEkle(int numara ,String isim, String soyisim, String sinif, String sube, String bolum) {
 
         Map<String,String> eklenecekValueMap = new HashMap<>();
         eklenecekValueMap.put("isim",isim);
